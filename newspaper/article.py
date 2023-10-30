@@ -64,7 +64,7 @@ class Article(object):
 
         self.url = urls.prepare_url(url, self.source_url)
 
-        self.title = title
+        self.title = str(title)
 
         # URL of the "best image" to represent this article
         self.top_img = self.top_image = ''
